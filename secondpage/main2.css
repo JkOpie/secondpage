@@ -123,3 +123,12 @@
 .img_general{
     width:1055px;
 }
+
+@media screen and (max-width: 768px){
+    .page-2-b1-right-img{
+        display:none;
+    }
+    .page-2-b1-left{
+        padding:10vh
+    }
+}
