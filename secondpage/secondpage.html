@@ -46,7 +46,7 @@
         <!----------------------------------2nd block------------------------------>
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/2.png" alt="">
+                <img class="img_4 " src="image/2.png" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
                 
@@ -92,7 +92,7 @@
         
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/4.png" alt="">
+                <img class="img_4 revealOnScroll" data-animation="fadeIn" src="image/4.png" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
                 
@@ -141,10 +141,54 @@
                 <h2 class="intergration">Execution</h2>
                 <h2 class="intergration">Technical</h2>
                 <h2 class="intergration">Logistic</h2>
-                 
+
             </div>
         </div>
 
     </main>
 </body>
+
+<script>
+
+$(function() {
+var $window           = $(window),
+    win_height_padded = $window.height() * 1.1,
+    isTouch           = Modernizr.touch;
+
+if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+$window.on('scroll', revealOnScroll);
+
+function revealOnScroll() {
+  var scrolled = $window.scrollTop(),
+      win_height_padded = $window.height() * 1.1;
+
+  // Showed...
+  $(".revealOnScroll:not(.animated)").each(function () {
+    var $this     = $(this),
+        offsetTop = $this.offset().top;
+
+    if (scrolled + win_height_padded > offsetTop) {
+      if ($this.data('timeout')) {
+        window.setTimeout(function(){
+          $this.addClass('animated ' + $this.data('animation'));
+        }, parseInt($this.data('timeout'),10));
+      } else {
+        $this.addClass('animated ' + $this.data('animation'));
+      }
+    }
+  });
+  // Hidden...
+ $(".revealOnScroll.animated").each(function (index) {
+    var $this     = $(this),
+        offsetTop = $this.offset().top;
+    if (scrolled + win_height_padded < offsetTop) {
+      $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+    }
+  });
+}
+
+revealOnScroll();
+});
+</script>
 </html>
