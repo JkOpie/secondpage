@@ -46,9 +46,15 @@
     padding-right: 7%;
 }
 
+.transition_effect{
+    transition: ease 4s;
+    opacity: 1;
+}
+
+
+
 .img_4{
-    height: 100%;
-    width: 100%;
+   
     padding: 0;
 }
 

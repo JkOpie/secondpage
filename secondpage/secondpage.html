@@ -1,29 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="main2.css">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="animated.css">
 </head>
+
+<style>
+    div#hero {
+        height: 100%;
+        z-index: 100;
+    }
+    div#hero>div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: ease 2s;
+        
+    }
+    #pic_1 {
+        background-image: url('image/2.png');
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 50%;
+    }
+</style>
+
 <body>
     <main class="container-fluid">
         <!----------------------------------1st block------------------------------>
         <div class="row">
             <div class="col-md-6 page-2-b1-left" style="background: #1D1D1B;color:grey;">
                 <p class="subtitle-red-p2">Vision</p>
-                <p class="subtitle-sub-p2">To stand out as an integrated and strategic world class engagement agency.</p>
-                
+                <p class="subtitle-sub-p2">To stand out as an integrated and strategic world class engagement agency.
+                </p>
+
                 <p class="subtitle-red-p2">Mission</p>
-                <p class="subtitle-sub-p2">To be the global capable player with world class delivery system and to provide lasting positive impact or results in all we do.</p>
-                
+                <p class="subtitle-sub-p2">To be the global capable player with world class delivery system and to
+                    provide lasting positive impact or results in all we do.</p>
+
                 <p class="subtitle-red-p2">Core Values</p>
-                    <p class="subtitle-sub-p2">• Have the ability to translate needs to reality in terms of experience • To approach all engagement with a mindset of creativity & ideation • To promote execution excellence</p>
+                <p class="subtitle-sub-p2">• Have the ability to translate needs to reality in terms of experience • To
+                    approach all engagement with a mindset of creativity & ideation • To promote execution excellence
+                </p>
             </div>
             <div class="col-lg-6 pic-1b" style="padding: 0;">
                 <img class="page-2-b1-right-img" src="image/image_3.png">
@@ -32,18 +63,25 @@
 
         <!----------------------------------2nd block------------------------------>
         <div class="row">
-            <div class="col-md-6 p-0 m-0">
-                <img class="img_4 " src="image/2.png" alt="">
+            <div class="col-md-6 p-0 m-0 ">
+                <!--  -->
+
+                <div id="hero">
+                    <div id="pic_1" class="img_4" alt=""></div>
+
+
+                </div>
             </div>
             <div class="col-md-6 grey_bg text-left">
-                
+
                 <h1 class="our_team heading_1d1d">Our Team</h1>
 
-                <p class="ot_p heading_1d1d">ChilliHS’ talents include all kinds of discipline from creative and design to production to logistics.</p>
+                <p class="ot_p heading_1d1d">ChilliHS’ talents include all kinds of discipline from creative and design
+                    to production to logistics.</p>
 
                 <h2 class="digital">Digital</h2>
 
-                <h3 class="intergration" >Integration </h3>
+                <h3 class="intergration">Integration </h3>
 
                 <ul class="ul_desp">
                     <li>Social Media </li>
@@ -53,7 +91,7 @@
                 <h3 class="intergration">Technology </h3>
 
                 <ul class="ul_desp">
-                    <li>Web Development   </li>
+                    <li>Web Development </li>
                     <li>Digital Product</li>
                     <li>App</li>
                 </ul>
@@ -62,31 +100,32 @@
 
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/3.png" alt="">
+                <img src="image/3.png" class="img_4" alt="">
+
             </div>
             <div class="col-md-6 grey_bg text-left">
-                
+
                 <h1 class="digital heading_1d1d">Creative</h1>
 
                 <p class="ot_p heading_1d1d">Design</p>
 
                 <p class="ot_p heading_1d1d">Content Strategy</p>
 
-               
+
             </div>
         </div>
 
-        
+
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4 revealOnScroll" data-animation="fadeIn" src="image/4.png" alt="">
+                <img src="image/4.png" class="img_4" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
-                
+
                 <h1 class="digital">Sales & Markting</h1>
 
                 <h2 class="intergration">Sales</h2>
-                
+
                 <ul class="ul_desp">
                     <li>Biz Events</li>
                     <li>Events</li>
@@ -99,31 +138,31 @@
                 </ul>
 
                 <h2 class="intergration">Marketing</h2>
-                
+
                 <ul class="ul_desp">
                     <li>Business Development </li>
                     <li>Sponsorship & Collaboration</li>
                     <li>Marcom</li>
                 </ul>
-                
+
                 <h2 class="intergration">Support</h2>
-                
+
                 <ul class="ul_desp">
                     <li>Marketing Support</li>
                     <li>Marketing Finance</li>
                 </ul>
 
-               
+
             </div>
         </div>
 
         <!----------------------------------5th block------------------------------>
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/6.png" alt="">
+                <img src="image/6.png" class="img_4" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
-                
+
                 <h1 class="digital">Operation</h1>
 
                 <h2 class="intergration">Execution</h2>
@@ -134,78 +173,84 @@
         </div>
 
         <!----------------------------------6th block------------------------------>
-        
+
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/7.png" alt="">
+                <img src="image/7.png" class="img_4" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
                 <h2 class="digital">Administration</h2>
 
-                <h3 class="intergration" >Talent</h3>
-                <h3 class="intergration" >Admin / IT</h3>
-                <h3 class="intergration" >Management System / Legal</h3>
+                <h3 class="intergration">Talent</h3>
+                <h3 class="intergration">Admin / IT</h3>
+                <h3 class="intergration">Management System / Legal</h3>
             </div>
         </div>
-        
+
         <!----------------------------------7th block------------------------------>
-        
+
         <div class="row">
             <div class="col-md-6 p-0 m-0">
-                <img class="img_4" src="image/8.png" alt="">
+                <img src="image/8.png" class="img_4" alt="">
             </div>
             <div class="col-md-6 grey_bg text-left">
                 <h2 class="digital">Finance</h2>
 
-                <h3 class="intergration" >Account </h3>
-                <h3 class="intergration" >Statutory </h3>
+                <h3 class="intergration">Account </h3>
+                <h3 class="intergration">Statutory </h3>
             </div>
         </div>
 
     </main>
 </body>
 
+
+
+
 <script>
 
-$(function() {
-var $window           = $(window),
-    win_height_padded = $window.height() * 1.1,
-    isTouch           = Modernizr.touch;
+var pic_1 = document.querySelector('#pic_1');
+var heroElem = document.querySelector('#hero');
+    
 
-if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+    //console.log(heroElem);
+    
+    window.addEventListener('scroll', (event) => {
 
-$window.on('scroll', revealOnScroll);
+        
+        myFunction();
+    });
 
-function revealOnScroll() {
-  var scrolled = $window.scrollTop(),
-      win_height_padded = $window.height() * 1.1;
 
-  // Showed...
-  $(".revealOnScroll:not(.animated)").each(function () {
-    var $this     = $(this),
-        offsetTop = $this.offset().top;
+    function myFunction() {
+       
 
-    if (scrolled + win_height_padded > offsetTop) {
-      if ($this.data('timeout')) {
-        window.setTimeout(function(){
-          $this.addClass('animated ' + $this.data('animation'));
-        }, parseInt($this.data('timeout'),10));
-      } else {
-        $this.addClass('animated ' + $this.data('animation'));
-      }
+        
+        var sticky = heroElem.offsetTop;
+
+        console.log(window.pageYOffset);
+
+        if (window.pageYOffset > 2000) {
+            pic_1.style.background = "url('image/8.png')";
+            
+        } else if (window.pageYOffset > 1800) {
+            pic_1.style.background = "url('image/7.png')";
+        } else if (window.pageYOffset > 1600) {
+            pic_1.style.background = "url('image/6.png')";
+        } else if (window.pageYOffset > 1400) {
+            pic_1.style.background = "url('image/4.png')";
+        } else if (window.pageYOffset > 1200) {
+            pic_1.style.background = "url('image/3.png')";
+            //console.log("2st_pic");
+        } else if (window.pageYOffset > 950) {
+            heroElem.classList.add("sticky");
+            pic_1.style.background = "url('image/2.png')";
+            //pic_1.classList.add("transition_effect");
+            //console.log("1st_pic");
+        } else {
+            heroElem.classList.remove("sticky");
+        }
     }
-  });
-  // Hidden...
- $(".revealOnScroll.animated").each(function (index) {
-    var $this     = $(this),
-        offsetTop = $this.offset().top;
-    if (scrolled + win_height_padded < offsetTop) {
-      $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
-    }
-  });
-}
-
-revealOnScroll();
-});
 </script>
+
 </html>
