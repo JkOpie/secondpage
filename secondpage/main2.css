@@ -1,41 +1,41 @@
 @font-face {
     font-family: 'GothamRoundedBold';
-    src: url(" https://mychilli.asia/fonts/GothamRounded-Bold.otf") format("opentype");
+    src: url("fonts/GothamRounded-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'GothamLightRegular';
-    src: url("https://mychilli.asia/fonts/GothamLightRegular.otf") format("opentype");
+    src: url("fonts/GothamLightRegular.otf") format("opentype");
 }
 
 @font-face {
     font-family: 'LucidaGrande';
-    src: url("https://mychilli.asia/fonts/LucidaGrande.ttf") format("truetype");
+    src: url("fonts/LucidaGrande.ttf") format("truetype");
 }
 
 @font-face {
      font-family: 'lucida-grande';
-     src: url('https://mychilli.asia/fonts/LucidaGrande.ttf');
+     src: url('fonts/LucidaGrande.ttf');
  }
 
  @font-face {
      font-family: 'gotham-rounded-bold';
-     src: url('https://mychilli.asia/fonts/GothamRoundedBold.ttf');
+     src: url('fonts/GothamRoundedBold.ttf');
  }
 
  @font-face {
      font-family: 'abril-fatface';
-     src: url('https://mychilli.asia/fonts/AbrilFatfaceRegular.otf');
+     src: url('fonts/AbrilFatfaceRegular.otf');
  }
 
  @font-face {
      font-family: 'gotham-light';
-     src: url('https://mychilli.asia/fonts/GothamLight.ttf');
+     src: url('fonts/GothamLight.ttf');
  }
 
  @font-face {
      font-family: 'gotham-regular';
-     src: url('https://mychilli.asia/fonts/GothamRounded.ttf');
+     src: url('fonts/GothamRounded.ttf');
  }
 
 .grey_bg{
@@ -80,4 +80,16 @@
     font-family: GothamRoundedBold;
     font-size: 20px;
     font-weight: 700;
+}
+
+.ul_desp{
+    padding-bottom: 16px;
+}
+
+.ul_desp li{
+    font-family:GothamLightRegular ;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1D1D1B;
+    
 }
