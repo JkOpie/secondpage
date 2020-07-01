@@ -81,6 +81,17 @@
     font-size: 20px;
     font-weight: 700;
 }
+
+
+.page-2-b1-left{
+    padding-left:5vh;
+    padding-top:30vh;
+    padding-right:10vh;
+}
+.page-2-b1-right-img {
+   height: 1055px;
+   width: 100%;
+}
 .subtitle-red-p2 {
     font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
     color: #D54345;
@@ -107,4 +118,7 @@
     font-weight: 300;
     color: #1D1D1B;
     
+}
+.img_general{
+    width:1055px;
 }
