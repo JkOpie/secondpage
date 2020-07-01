@@ -81,3 +81,17 @@
     font-size: 20px;
     font-weight: 700;
 }
+.subtitle-red-p2 {
+    font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
+    color: #D54345;
+    font-family: LucidaGrande;
+    margin: 0;
+    font-weight: bold;
+}
+
+.subtitle-sub-p2 {
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-family: gotham-light;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+}
