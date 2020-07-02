@@ -72,7 +72,7 @@
 
                 </div>
             </div>
-            <div class="col-md-6 grey_bg text-left">
+            <div class="col-md-6 grey_bg text-left" id="div2">
 
                 <h1 class="our_team heading_1d1d">Our Team</h1>
 
@@ -98,9 +98,9 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-6 p-0 m-0">
-                <img src="image/3.png" class="img_4" alt="">
+        <div class="row" >
+            <div class="col-md-6 p-0 m-0" >
+                <img  src="image/3.png" class="img_4" alt="">
 
             </div>
             <div class="col-md-6 grey_bg text-left">
@@ -193,12 +193,41 @@
             <div class="col-md-6 p-0 m-0">
                 <img src="image/8.png" class="img_4" alt="">
             </div>
-            <div class="col-md-6 grey_bg text-left">
+            <div class="col-md-6 grey_bg text-left" id="div_lst">
                 <h2 class="digital">Finance</h2>
 
                 <h3 class="intergration">Account </h3>
                 <h3 class="intergration">Statutory </h3>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 p-5 m-0"  >
+                <div >
+                    <h1 class="policy_heading" style="padding-top: 1em;">Quality, Health, Safety & Environmental Policy</h1>
+                </div>
+
+                <div>
+                    <h2  class="p_passion"> Our passion is to:</h2>
+
+                    <ul class="ul_passion_desc">
+                        <li>Deliver world class services and solutions</li>
+                        <li>Aim to exceed the expectations of our valued clients</li>
+                        <li>Strive to comply with the requirements of ISO 9001 Standards</li>
+                        <li>Continually improve the effectiveness of our Quality Management System </li>
+                        <li>Identify and reduce significant hazards, risks and environmental impact in our job and workplace</li>
+                        <li>Aim to minimize and/or prevent any occupational injury and ill health as well as any possible environmental pollution in every aspect of our job and workplace</li>
+                        <li>Aim to comply with relevant SHE legislations or other requirements to which organization subscribes that relate to its OH&S hazards and environment aspect</li>
+                        <li>Strive to comply with the requirements of OHSAS 18001 and ISO 14001 Standards; • Continually improve the effectiveness of our QESH Management System.</li>
+                    </ul>
+
+                    <h2 class="p_passion" style="padding-bottom: 1em;"> ChilliHS is committed to ensure that this policy is communicated, maintained and distributed to our clients and persons working on our behalf, and shall be reviewed and continually improved upon to ensure its suitability and effectiveness.</h2>
+                </div>
+               
+            </div>
+
+            
+
         </div>
 
     </main>
@@ -211,43 +240,45 @@
 
 var pic_1 = document.querySelector('#pic_1');
 var heroElem = document.querySelector('#hero');
-    
+
+var div2 = document.querySelector('#div2');
+var div_lst = document.querySelector('#div_lst');
 
     //console.log(heroElem);
-    
-    window.addEventListener('scroll', (event) => {
 
-        
+    console.log(div2.offsetTop);
+    console.log(div_lst.offsetTop);
+    window.addEventListener('scroll', (event) => {
         myFunction();
     });
 
 
     function myFunction() {
-       
-
-        
         var sticky = heroElem.offsetTop;
 
         console.log(window.pageYOffset);
-
-        if (window.pageYOffset > 2000) {
+        
+        if(window.pageYOffset > div_lst.offsetTop){
+            heroElem.classList.remove("sticky");
+        }
+        else if(window.pageYOffset > 4700){
+            heroElem.classList.add("sticky");
             pic_1.style.background = "url('image/8.png')";
-            
-        } else if (window.pageYOffset > 1800) {
+        }
+        else if (window.pageYOffset > 4000) {
+            pic_1.style.background = "url('image/8.png')";
+        } else if (window.pageYOffset > 3500) {
             pic_1.style.background = "url('image/7.png')";
-        } else if (window.pageYOffset > 1600) {
+        } else if (window.pageYOffset > 3000) {
             pic_1.style.background = "url('image/6.png')";
-        } else if (window.pageYOffset > 1400) {
+        } else if (window.pageYOffset > 2500) {
             pic_1.style.background = "url('image/4.png')";
-        } else if (window.pageYOffset > 1200) {
+        } else if (window.pageYOffset > 2000) {
             pic_1.style.background = "url('image/3.png')";
-            //console.log("2st_pic");
-        } else if (window.pageYOffset > 950) {
+        } else if (window.pageYOffset > div2.offsetTop) {
             heroElem.classList.add("sticky");
             pic_1.style.background = "url('image/2.png')";
-            //pic_1.classList.add("transition_effect");
-            //console.log("1st_pic");
-        } else {
+        } else{
             heroElem.classList.remove("sticky");
         }
     }

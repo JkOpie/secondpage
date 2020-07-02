@@ -51,9 +51,9 @@
     opacity: 1;
 }
 
-
-
 .img_4{
+    width: 100%;
+    height: 100%;
    
     padding: 0;
 }
@@ -130,11 +130,40 @@
     width:1055px;
 }
 
+.policy_heading{
+    font-family: LucidaGrande;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #D54345;
+    padding-bottom: 1em;
+}
+
+.p_passion{
+    font-family: GothamRoundedBold;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.ul_passion_desc{
+    font-family: GothamLightRegular;
+    font-size: 18px;
+    font-weight:400;
+    padding-bottom: 1em;
+}
+
 @media screen and (max-width: 768px){
     .page-2-b1-right-img{
         display:none;
     }
     .page-2-b1-left{
         padding:10vh
+    }
+
+    div#hero{
+        z-index: 0 !important;
+    }
+
+    .page-2-b1-left{
+        z-index: 2;
     }
 }
