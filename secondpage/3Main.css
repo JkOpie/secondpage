@@ -49,13 +49,17 @@
     
 }
 
+.bg-yellow{
+    background-color: #FFC900 ;
+}
+
 .btn-dark-color:hover{
     color: #ffffff;
 }
 
 .bg-red{
     background-color: #D54345 ;
-    height: 100vh;
+    height: 100%;
 }
 
 .heading-specialise{
