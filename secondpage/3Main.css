@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url("fonts/GothamRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'GothamLightRegular';
+    src: url("fonts/GothamLightRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url("fonts/LucidaGrande.ttf") format("truetype");
+}
+
+@font-face {
+     font-family: 'lucida-grande';
+     src: url('fonts/LucidaGrande.ttf');
+ }
+
+ @font-face {
+     font-family: 'gotham-rounded-bold';
+     src: url('fonts/GothamRoundedBold.ttf');
+ }
+
+ @font-face {
+     font-family: 'abril-fatface';
+     src: url('fonts/AbrilFatfaceRegular.otf');
+ }
+
+ @font-face {
+     font-family: 'gotham-light';
+     src: url('fonts/GothamLight.ttf');
+ }
+
+ @font-face {
+     font-family: 'gotham-regular';
+     src: url('fonts/GothamRounded.ttf');
+ }
+
+.btn-dark-color{
+    width: 295px;
+    height: 85px;
+    color: #ffffff;
+    background-color: #1D1D1B ;
+    font-family: lucida-grande;
+    font-size: 22px;
+    
+}
+
+.btn-dark-color:hover{
+    color: #ffffff;
+}
+
+.bg-red{
+    background-color: #D54345 ;
+    height: 100vh;
+}
+
+.heading-specialise{
+    font-size: 75px;
+    font-family: gotham-rounded-bold;
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding-bottom: 1em;
+}
+
+.underline_text{
+    text-decoration: underline;
+    font-family: abril-fatface;
+    font-weight: 50;
+   
+}
+
+.p_au{
+    font-size: 22px;
+    font-family: gotham-light;
+    color: #FFFFFF;
+    padding-bottom: 3em;
+}
+.block1_wrapper{
+    width: 75%;
+    padding-bottom: 3em;
+    padding-bottom: 1em;
+}
+
+.img_ab_1{
+    z-index: 2;
+}
+
+.carousel-control-next, .carousel-control-prev { border: 0; }
+.top-content { width: 100%; padding-top: 100px; }
+
+
