@@ -38,6 +38,11 @@
      font-family: 'gotham-regular';
      src: url('fonts/GothamRounded.ttf');
  }
+ 
+ @font-face {
+    font-family: 'gotham-medium-regular';
+    src: url('fonts/gothammediumregular.ttf');
+}
 
 .btn-dark-color{
     width: 295px;
@@ -95,5 +100,115 @@
 
 .carousel-control-next, .carousel-control-prev { border: 0; }
 .top-content { width: 100%; padding-top: 100px; }
+
+
+.title-lucida {
+    font-size: calc(32px + (45 - 32) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    font-family: lucida-grande;
+}
+
+ .subtitle-sub {
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-family: gotham-light;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+}
+ .subtitle-sub-nopad {
+    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-family: gotham-light;
+    line-height:35px;
+}
+.subtitle-sub-nopad-lg {
+   font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1600 - 300)));
+   font-family: gotham-light;
+   line-height:35px;
+}
+
+ .gotham-medium-regular{
+    font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    font-family: gotham-medium-regular;
+ }
+
+ .subtitle-red {
+    font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1600 - 300)));
+    color: #D54345;
+    font-family: gotham-regular;
+    margin: 0;
+}
+
+.subtitle-red-pad {
+    font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1600 - 300)));
+    color: #D54345;
+    font-family: gotham-regular;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.subtitle-red-pad-sm {
+    font-size: calc(23px + (26 - 23) * ((100vw - 300px) / (1600 - 300)));
+    color: #D54345;
+    font-family: gotham-regular;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.abril-fatface-40{
+    font-size: calc(35px + (40 - 35) * ((100vw - 300px) / (1600 - 300)));
+    color: #D54345;
+    font-family: abril-fatface;
+}
+.text-gray{
+    color:#818181;
+}
+
+.background-gray{
+    background-color:#818181;
+}
+
+.vertical-margin-35px{
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+ .standard-margin{
+     padding:5% 2.5% 5% 2.5%;
+ }
+
+ .r1-margin{
+     padding-right:33.3%;
+ }
+ .r2-margin{
+     padding-right:8.1%;
+ }
+ .col-pad{
+    padding-right: 5%;
+ }
+ .img-1-fix{
+     width:100%;
+     height:100%;
+ }
+ 
+
+ @media screen and (max-width:768px){
+    .standard-margin{
+    padding:5% 10% 5% 10%;
+    }
+    .col-pad{
+        margin-bottom:5%;
+    }
+    .r1-margin{
+        padding-right:0;
+    }
+ }
+
+ @media screen and (max-width:768px){
+    .standard-margin{
+    padding:5% 12.5% 5% 12.5%;
+    }
+ }
 
 
