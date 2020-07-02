@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'GothamRoundedBold';
+    src: url("fonts/GothamRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'GothamLightRegular';
+    src: url("fonts/GothamLightRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url("fonts/LucidaGrande.ttf") format("truetype");
+}
+
+@font-face {
+     font-family: 'lucida-grande';
+     src: url('fonts/LucidaGrande.ttf');
+ }
+
+ @font-face {
+     font-family: 'gotham-rounded-bold';
+     src: url('fonts/GothamRoundedBold.ttf');
+ }
+
+ @font-face {
+     font-family: 'abril-fatface';
+     src: url('fonts/AbrilFatfaceRegular.otf');
+ }
+
+ @font-face {
+     font-family: 'gotham-light';
+     src: url('fonts/GothamLight.ttf');
+ }
+
+ @font-face {
+     font-family: 'gotham-regular';
+     src: url('fonts/GothamRounded.ttf');
+ }
+
+ @font-face {
+    font-family: 'gotham-medium-regular';
+    src: url('fonts/gothammediumregular.ttf');
+}
+
+.text-black{
+    color:#1D1D1B;
+}
+
+.text-red{
+    color:#D54345;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-bold{
+    text-decoration: bold;
+}
+
+.text-75px{
+    font-size: calc(70px + (75 - 70) * ((100vw - 300px) / (1600 - 300)));
+}
+.text-30px{
+    font-size: calc(26px + (30 - 26) * ((100vw - 300px) / (1600 - 300)));
+}
+.text-23px{
+    font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.abril-fatface{
+    font-family:abril-fatface;
+}
+
+.gotham-rounded{
+    font-family:gotham-regular;
+}
+
+
+.r1-custom{
+    padding-top:291px;
+    padding-right:31px;
+    padding-left:32px;
+}
+.r2-custom{
+    padding-top:226px;
+    padding-right:35px;
+    padding-left:32px;
+}
+
+.lr-nopad{
+    padding-left:0;
+    padding-right:0;
+}
+
+.img-dimension{
+    width:100%;
+    height:100vh;
+}
