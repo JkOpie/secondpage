@@ -152,6 +152,10 @@
     padding-bottom: 1em;
 }
 
+.text-p-nopad{
+    padding-bottom:1%;
+}
+
 @media screen and (max-width: 768px){
     .page-2-b1-right-img{
         display:none;

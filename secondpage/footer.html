@@ -1,0 +1,88 @@
+
+<style>
+    
+    @font-face {
+        font-family: 'GothamLightRegular';
+        src: url("fonts/GothamLightRegular.otf") format("opentype");
+    }
+    @font-face {
+        font-family: 'lucida-grande';
+        src: url('fonts/LucidaGrande.ttf');
+    }
+    .heading_block_4 {
+        font: Bold 50px/59px lucida-grande;
+        letter-spacing: 0px;
+    }
+        
+    .btn_chart {
+        width: 295px;
+        height: 85px;
+        background: #1D1D1B 0% 0% no-repeat padding-box;
+        text-align: center;
+        font: Bold 22px/40px lucida-grande;
+        letter-spacing: 2.2px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    .text-lucidagrande{
+        font-family:lucida-grande;
+    }
+    .text-33px{
+        font-size: calc(30px + (33 - 30) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .text-28px{
+        font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .text-25px{
+        font-size: calc(23px + (25 - 23) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .text-22px{
+        font-size: calc(20px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .text-18px{
+        font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .text-gothammedium{
+        font-family:GothamLightRegular
+    }
+    .text-bold{
+        font-weight: bold;
+    }
+    .text-grey{
+        color:#C9C6C6;
+    }
+    .text-align-right{
+        text-align: right;
+    }
+    @media screen and (max-width: 600px) {
+        
+        .btn_chart{
+             width: 97.5%;
+        }
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row" style="background: #D54345 0% 0% no-repeat padding-box;">
+        <div class="col-md-6 text-left text-white">
+            <div style="padding-top:108px;padding-left:7%;">
+                <h1 class="heading_block_4 pb-5 "> Lauch your next project.</h1>
+                <button class="btn btn_chart"> LET'S CHAT </button>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <div style="color:white;padding-left:7%;">
+                <div style="margin-top:50px;"></div>
+                <p class="text-lucidagrande text-33px text-bold text-grey">Find us on the internet</p><br>
+                <p class="text-lucidagrande text-22px">Facebook :<span class="text-underline">fb.com/chillihs</span></p>
+                <p class="text-lucidagrande text-22px">Email    :<span class="text-underline">hello@mychilli.asia</span></p>
+                <div style="margin-bottom:55px"></div>
+                <p class="text-gothammedium text-25px" style="word-spacing:72px;">
+                    Malaysia Cambodia Vietnam Indonesia Thailand
+                </p>
+                <div style="padding-bottom:80px"></div>
+                <p class="text-18px text-gothammedium text-align-right">© 2020 ChiliHS. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
