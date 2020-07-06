@@ -13,6 +13,10 @@ div#hero>div {
 
 }
 
+.black{
+    background-color: #1D1D1B; 
+}
+
 .block-3-wrapper{
 	padding-left:7%;
 }
@@ -71,6 +75,13 @@ div#hero>div {
 
 #site-footer{
  background-color: #D54345 ;
+}
+
+.counter_wrapper{
+    background-image: url('https://mychilli.asia/wp-content/uploads/2020/06/image_2.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 
@@ -276,12 +287,6 @@ ul.primary-menu>li.menu-item>a {
     text-transform: uppercase;
 }
 
-.heading_block_4 {
-
-    font: Bold 50px/59px LucidaGrande;
-    letter-spacing: 0px;
-
-}
 
 .find_heading {
     text-align: left;
@@ -388,8 +393,8 @@ ul.primary-menu>li.menu-item>a {
      color:black;
  }
 
- .button_black {
-     background-color: #1D1D1B; 
+ .button {
+    
      text-decoration: none;
      display: inline-block;
      border: none;
@@ -405,22 +410,19 @@ ul.primary-menu>li.menu-item>a {
 
  .button_black:hover{
     color: #fff;
-    
-
-
 }
 
  .pad-par {
      padding-top: 94px;
      padding-bottom: 94px;
-     padding-right: 260px;
+     padding-right: 150px;
  }
 
  .pad-par2 {
-     padding-top: 94px;
-     padding-bottom: 94px;
+     padding-top: 25%;
+     padding-bottom: 100px;
      padding-left: 80px;
-     padding-right: 120px;
+     padding-right: 10%;
  }
 
 .singular .entry-header{
@@ -441,18 +443,17 @@ padding: 0;
  }
 
  .left_div_b2 {
-     width: 95%;
-     float: right;
+     width: 100%;
+    
              padding-left: 10%;
  }
 
  .right_div_b2 {
-     width: 95%;
-     float: left;
+     width: 100%;
  }
-     .find-us {
-             padding-left: 3%;
-     }
+ .find-us {
+    padding-left: 3%;
+}
 
 .footer-top-visible .footer-nav-widgets-wrapper, .footer-top-hidden #site-footer{
  margin-top:0;
@@ -474,17 +475,17 @@ padding: 0;
 .text-75px{
     font-size: calc(50px + (75 - 50) * ((100vw - 300px) / (1920 - 300)));
 }
-<<<<<<< HEAD
+
 .text-50px{
     font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1920 - 300)));
 }
 .text-45px{
     font-size: calc(38px + (45 - 38) * ((100vw - 300px) / (1920 - 300)));
-=======
 
+}
 .text-55px{
     font-size: calc(40px + (55 - 40) * ((100vw - 300px) / (1920 - 300)));
->>>>>>> e0a9f47f91ee3d1ec3e71a019da70efe3f90eedc
+
 }
 .text-30px{
     font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1920 - 300)));
@@ -493,7 +494,7 @@ padding: 0;
     font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1920 - 300)));
 }
 
-<<<<<<< HEAD
+
 .p-text-norem{
     margin-bottom:0rem;
 }
@@ -501,12 +502,12 @@ padding: 0;
 .p-text-3rem{
     margin-bottom:3rem;
 }
-=======
+
 .text-17px{
     font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
 }
 
->>>>>>> e0a9f47f91ee3d1ec3e71a019da70efe3f90eedc
+
 
 .abril-fatface{
     font-family:abril-fatface;
@@ -518,6 +519,7 @@ padding: 0;
 
 .gotham-light{
     font-family:gotham-light;
+    line-height: 1.8;
 }
 
 .display-toggle{
@@ -892,26 +894,26 @@ z-index:0;
 }
 
 
-@media screen and (max-width: 960px) {
+@media  screen and (max-width: 960px) {
      .left_div {
         width: 480px;
     }
-    .img_main{
-        height: unset;
-    }
 
-    .right_div {
-        width: 100%;
-        height: unset;
-        padding-top: 10%;
+    .pad-par2{
+        padding-left: 13%;
+        padding-right: 7%;
+        
+        
     }
+   
+
       
     .left_div_b2 {
         width: 100%;
     }
 
     .right_div_b2 {
-        width: 95%;
+        width: 100%;
     }
 
     .center {
@@ -930,58 +932,74 @@ z-index:0;
           padding-left: 13%;
     }
       
-    .pad-par2 {
-     padding-top: 10%;
-     padding-bottom: 10%;
-     padding-left: 12.5%;
-     padding-right: 7%;
-     }
-     .pad-par {
+   .pad-par {
     padding-top: 10%;
          padding-bottom: 10%;
          padding-left: 13%;
          padding-right: 7%;;
       }
-     .black-bg {
-          background:
-          linear-gradient(rgba(82, 82, 82, 0.65),rgba(48, 48, 48, 0.65)), 
-          url('https://mychilli.asia/wp-content/uploads/2020/06/image_2.png');
-          background-position: center;
-      }
+    
       .block-3-left {
           display:none;
       }
       
-      .block-2-left {
-         display:none;
-     }
-              .find-us{
+           .find-us{
           padding-left:7%;
-          }
-
-      
+          } 
        
 }
   
 
-  @media screen and (max-width: 768px) {
-		
-		input[type="submit"]{
-        
+  @media  screen and (max-width: 768px) {
+
+    .black-bg{
+        background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(https://mychilli.asia/wp-content/uploads/2020/06/image_2.png);
+        background-position: center;
+    }
+
+    .block-2-left {
+        display:none;
+    }
+      
+
+    .counter_wrapper{
+        height: unset;
+    }
+
+    
+    .img_main{
+        height: unset;
+    }
+
+    .right_div {
         width: 100%;
-        
-        }
-        
-        .display-toggle{
-            display: unset;
-            width:100%;
-        
-        }
+        height: unset;
+        padding-top: 10%;    
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+		
+    input[type="submit"]{
     
+        width: 100%;
     
-		.div-gap{
-			margin-bottom:0px;
-		}
+    }
+    
+    .display-toggle{
+        display: unset;
+        width:100%;
+        padding-bottom: 30px;
+    
+    }
+    .pad-par2{
+        padding-top: 10%;
+    padding-bottom: 10%;
+    }
+
+
+    .div-gap{
+        margin-bottom:0px;
+    }
     .find-us{
           padding-left:9%;
     }
@@ -991,8 +1009,10 @@ z-index:0;
     .r2-custom{
         padding-bottom:0;
     }
+
     .page-2-b1-right-img{
-        display:none;
+        display: none;
+        height: unset;
     }
 
     .policy_heading{
@@ -1060,7 +1080,7 @@ z-index:0;
     }
  }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .left_div {
         width: 300px;
     }
@@ -1081,13 +1101,13 @@ z-index:0;
         }
 }
 
-@media screen and (max-width:400px){
+@media only screen and (max-width:400px){
     .bg-red{
         padding: 22% 12% 28% 12%;
    }
  }
 
-@media screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     .left_div {
         width: 100%;
     }
@@ -1111,8 +1131,8 @@ z-index:0;
     }
       
            .pad-par2 {
-     padding-top: 10%;
-     padding-bottom: 10%;
+     padding-top: 100px;
+     padding-bottom: 100px;
      padding-left: 7%;
      padding-right: 7%;
      }
