@@ -19,8 +19,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" href="3Main.css">
-    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="merge.css">
 
 </head>
 
@@ -43,6 +42,7 @@
                     </button>
                 </div>
 
+               
                 <div class="top-content">
                     <div id="carousel-example" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner row w-100 " role="listbox">
@@ -141,7 +141,7 @@
         <div class="container-fluid standard-margin2" style="background:#1D1D1B;color:white">
             <!--1st row-->
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 r2-margin">
                     <p class="title-lucida" style="font-size:55px;">Virtual Events</p><br>
                     <p class="subtitle-sub-nopad-lg">The way people engage with brands are evolving. We live in a
                         multi-channel engagement world.</p>
@@ -153,10 +153,10 @@
                     <p class="abril-fatface-40">Live Engagement Conference Apps</p>
                 </div>
             </div>
-            <div style="margin-bottom:167px;"></div>
+            <div class="div-gap"></div>
             <!--2nd row-->
             <div class="row">
-                <div class="col-md-6 r2-margin">
+                <div class="col-md-6">
                     <p class="subtitle-red-pad-sm">Attendance List & Direct Message</p>
                     <p class="subtitle-sub-nopad">Facilitate networking based on interests, titles, and more. Empower
                         attendees to initiate conversations with each other.</p>
@@ -173,7 +173,7 @@
                     <img class="img-1-fix" src="https://mychilli.asia/wp-content/uploads/2020/07/3-1.png">
                 </div>
             </div>
-            <div style="margin-bottom:167px;"></div>
+            <div class="div-gap"></div>
             <!--3rd row-->
             <div class="row">
                 <div class="col-md-6">
@@ -256,12 +256,56 @@
 
         </div>
 
+<div class="container-fluid">
+    <div class="row" style="background: #D54345 0% 0% no-repeat padding-box;">
+        <div class="col-md-6 text-left text-white">
+            <div style="padding-top:108px;padding-left:7%;">
+                <h1 class="heading_block_4 pb-5 "> Lauch your next project.</h1>
+                <button class="btn btn_chart"> LET'S CHAT </button>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <div style="color:white;padding-left:7%;">
+                <div style="margin-top:50px;"></div>
+                <p class="text-lucidagrande text-33px text-bold text-grey">Find us on the internet</p><br>
+                <p class="text-lucidagrande text-22px">Facebook :<span class="text-underline">fb.com/chillihs</span></p>
+                <p class="text-lucidagrande text-22px">Email    :<span class="text-underline">hello@mychilli.asia</span></p>
+                <div style="margin-bottom:55px"></div>
+                <p class="text-gothammedium text-25px" style="word-spacing:72px;">
+                    Malaysia Cambodia Vietnam Indonesia Thailand
+                </p>
+                <div style="padding-bottom:80px"></div>
+                <p class="text-18px text-gothammedium text-align-right">© 2020 ChiliHS. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     </main>
-</body>
 
 <script>
     $(document).ready(function () {
-        $('#carousel-example').on('slide.bs.carousel', function (e) {
+
+$(".site-logo img"). attr("src", "https://mychilli.asia/wp-content/uploads/2020/07/Group-3_1.png");
+
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item .link-icon-wrapper  a").css("text-decoration","unset");
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item .link-icon-wrapper  a").css("border-bottom","3px solid #ffffff");
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item .link-icon-wrapper  a").css("padding-bottom","5px");
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $(".header-footer-group").addClass("scrolling");
+		$(".custom-logo"). attr("src", "https://mychilli.asia/wp-content/uploads/2020/06/logo.png");
+		
+    } else {
+        $(".header-footer-group").removeClass("scrolling");
+$(".custom-logo"). attr("src", "https://mychilli.asia/wp-content/uploads/2020/07/Group-3_1.png");
+    }
+});
+
+       $('#carousel-example').on('slide.bs.carousel', function (e) {
             /*
             CC 2.0 License Iatek LLC 2018 – Attribution required
             */
@@ -283,5 +327,4 @@
         });
     });
 </script>
-
 </html>
