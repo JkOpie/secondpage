@@ -100,6 +100,7 @@ div#hero>div {
     background-color: white;
     color: #1D1D1B;
     
+    
 }
 .grey_bg{
     background:  #F2F2F2 0% 0% no-repeat padding-box;
@@ -120,7 +121,7 @@ ul.primary-menu>li.menu-item>a {
 }
 
 .img_main {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -140,22 +141,18 @@ ul.primary-menu>li.menu-item>a {
 
 .gotham_font_round {
     font-family: GothamRoundedBold;
-    font-size: calc(35px + (75 - 35) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(55px + (55 - 35) * ((100vw - 300px) / (1920 - 300)));
     
 }
 
-.gotham_font_light {
-    text-align: left;
+
+.gotham_font_light p{
     font-family: GothamLightRegular;
-    font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1920 - 300)));
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
+    line-height: 1.8;
     opacity: 1;
 }
 
-.gotham_font_light p{
-    
-}
 
 .text-gothammedium{
     font-family:GothamLightRegular
@@ -218,22 +215,11 @@ ul.primary-menu>li.menu-item>a {
     border:1px solid white !important;
 }
 
-.padding_custom_block_1{
- padding-top: 249px;
- padding-bottom: 10%;
- padding-left: 7%;
- padding-right: 7%;
- 
-}
-
-.center {
-    text-align: left;
-}
 
 .text_chilies {
     color: red;
-        text-decoration: underline;
-
+    text-decoration: underline;
+    font-family: abril-fatface;
 }
 
 .btn_know {
@@ -248,6 +234,7 @@ ul.primary-menu>li.menu-item>a {
     text-transform: uppercase;
     opacity: 1;
 }
+
 
 .heading_block_3 {
     font: Bold 50px/60px LucidaGrande;
@@ -344,7 +331,11 @@ ul.primary-menu>li.menu-item>a {
 
 .right_div {
     width: 100%;
-    float: left;
+    height: 100vh;
+    padding-top: 25%;
+    padding-left: 13%;
+    padding-right: 7%;
+   
 }
 
 .img_wrapper{
@@ -398,17 +389,26 @@ ul.primary-menu>li.menu-item>a {
  }
 
  .button_black {
-     background-color: #1D1D1B;
-     border: none;
-     color: white;
-     padding: 15px 32px;
-     text-align: center;
+     background-color: #1D1D1B; 
      text-decoration: none;
      display: inline-block;
+     border: none;
+     color: white;
+     padding: 16px 28px;
+     text-align: center;
+     letter-spacing: 2.5px;
+     font-weight: bold;
+     font-family: lucida-grande;
      font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1920 - 300)));
-     margin-top: 30px;
 
  }
+
+ .button_black:hover{
+    color: #fff;
+    
+
+
+}
 
  .pad-par {
      padding-top: 94px;
@@ -474,11 +474,17 @@ padding: 0;
 .text-75px{
     font-size: calc(50px + (75 - 50) * ((100vw - 300px) / (1920 - 300)));
 }
+<<<<<<< HEAD
 .text-50px{
     font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1920 - 300)));
 }
 .text-45px{
     font-size: calc(38px + (45 - 38) * ((100vw - 300px) / (1920 - 300)));
+=======
+
+.text-55px{
+    font-size: calc(40px + (55 - 40) * ((100vw - 300px) / (1920 - 300)));
+>>>>>>> e0a9f47f91ee3d1ec3e71a019da70efe3f90eedc
 }
 .text-30px{
     font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1920 - 300)));
@@ -487,6 +493,7 @@ padding: 0;
     font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1920 - 300)));
 }
 
+<<<<<<< HEAD
 .p-text-norem{
     margin-bottom:0rem;
 }
@@ -494,6 +501,12 @@ padding: 0;
 .p-text-3rem{
     margin-bottom:3rem;
 }
+=======
+.text-17px{
+    font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
+}
+
+>>>>>>> e0a9f47f91ee3d1ec3e71a019da70efe3f90eedc
 
 .abril-fatface{
     font-family:abril-fatface;
@@ -880,31 +893,20 @@ z-index:0;
 
 
 @media screen and (max-width: 960px) {
-
-     .img_wrapper{
-         display: none;
-     }
-
-     .white-bg{
-         background:   linear-gradient( to bottom, 
-         rgba(80, 80, 80, 0.65),rgba(97, 96, 96, 0.65)
-           ), url('https://mychilli.asia/wp-content/uploads/2020/06/bg.png');
-
-         background-size: 100% 100%;
-         cursor: pointer;
-         height:100%;
-     }
-
-
      .left_div {
         width: 480px;
+    }
+    .img_main{
+        height: unset;
     }
 
     .right_div {
         width: 100%;
+        height: unset;
+        padding-top: 10%;
     }
       
-              .left_div_b2 {
+    .left_div_b2 {
         width: 100%;
     }
 
@@ -921,9 +923,7 @@ z-index:0;
         text-align: left;
     }
 
-    .gotham_font_light p {
-        color:white;
-    }
+    
       
     .padding_custom_block_1{
           padding-top: 100px;
@@ -959,9 +959,7 @@ z-index:0;
           padding-left:7%;
           }
 
-      .gotham_font_round{
-          color:white;
-      }
+      
        
 }
   
