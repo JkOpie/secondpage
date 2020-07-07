@@ -188,8 +188,30 @@ ul.primary-menu>li.menu-item>a {
     font-family:lucida-grande;
 }
 
+.text-75px{
+    font-size: calc(50px + (75 - 50) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.text-55px{
+    font-size: calc(40px + (55 - 40) * ((100vw - 300px) / (1920 - 300)));
+
+}
+
+.text-50px{
+    font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1920 - 300)));
+}
+  
+.text-45px{
+    font-size: calc(38px + (45 - 38) * ((100vw - 300px) / (1920 - 300)));
+
+}
+
 .text-33px{
    font-size: calc(30px + (33 - 30) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.text-30px{
+    font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .text-28px{
@@ -200,12 +222,25 @@ ul.primary-menu>li.menu-item>a {
    font-size: calc(23px + (25 - 23) * ((100vw - 300px) / (1920 - 300)));
 }
 
+.text-23px{
+    font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1920 - 300)));
+}
+
 .text-22px{
    font-size: calc(20px + (22 - 20) * ((100vw - 300px) / (1920 - 300)));
 }
 
+.text-20px{
+   font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1920 - 300)));
+}
+
+
 .text-18px{
    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.text-17px{
+    font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
 }
 
 
@@ -213,12 +248,31 @@ ul.primary-menu>li.menu-item>a {
     font-size: calc(15px + (16 - 15) * ((100vw - 300px) / (1920 - 300)));
  }
 
+
+ .text-15px{
+     font-size: calc(14px + (15 - 14) * ((100vw - 300px) / (1920 - 300)));
+  }
+
+
+ .text-13px{
+     font-size: calc(12px + (13 - 12) * ((100vw - 300px) / (1920 - 300)));
+  }
+
+
 .text-line-height-55px{
     line-height:55px;
 }
 
 .text-align-right{
     text-align: right;
+}
+
+.left-to-right{
+    order:1;
+}
+
+.right-to-left{
+    order:2;
 }
 
 
@@ -472,29 +526,6 @@ padding: 0;
     color:#1D1D1B;
 }
 
-.text-75px{
-    font-size: calc(50px + (75 - 50) * ((100vw - 300px) / (1920 - 300)));
-}
-
-.text-50px{
-    font-size: calc(40px + (50 - 40) * ((100vw - 300px) / (1920 - 300)));
-}
-.text-45px{
-    font-size: calc(38px + (45 - 38) * ((100vw - 300px) / (1920 - 300)));
-
-}
-.text-55px{
-    font-size: calc(40px + (55 - 40) * ((100vw - 300px) / (1920 - 300)));
-
-}
-.text-30px{
-    font-size: calc(25px + (30 - 25) * ((100vw - 300px) / (1920 - 300)));
-}
-.text-23px{
-    font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1920 - 300)));
-}
-
-
 .p-text-norem{
     margin-bottom:0rem;
 }
@@ -502,12 +533,6 @@ padding: 0;
 .p-text-3rem{
     margin-bottom:3rem;
 }
-
-.text-17px{
-    font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
-}
-
-
 
 .abril-fatface{
     font-family:abril-fatface;
@@ -585,23 +610,6 @@ input[type="submit"]{
         font-weight:bold;
     }
 
-.heading_1d1d{
-    color: #1D1D1B;
-}
-
-
-.our_team{
-    font-family:lLucidaGrande; 
-    font-size: 50px;
-    
-    font-weight: bold;
-    padding-bottom: 16px;
-}
-
-.ot_p{
-    font-family:GothamLightRegular ;
-    font-size: 20px;
-}
 
 .digital{
     font-family:GothamRoundedBold ;
@@ -625,8 +633,8 @@ input[type="submit"]{
     padding-bottom: 3%;
 }
 .page-2-b1-right-img {
-   height: 100vh;
-   width: 100%;
+    max-height: 100vh;
+    width: 100%;
 }
 .ul_desp li{
     font-family:GothamLightRegular ;
@@ -952,8 +960,17 @@ z-index:0;
 
   @media  screen and (max-width: 768px) {
 
+    
+
+    .left-to-right{
+        order:2;
+    }
+
+    .right-to-left{
+        order:1;
+    }
     .black-bg{
-        background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(https://mychilli.asia/wp-content/uploads/2020/06/image_2.png);
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://mychilli.asia/wp-content/uploads/2020/06/image_2.png);
         background-position: center;
     }
 
@@ -1010,11 +1027,6 @@ z-index:0;
         padding-bottom:0;
     }
 
-    .page-2-b1-right-img{
-        display: none;
-        height: unset;
-    }
-
     .policy_heading{
         font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1920 - 300)));
     }
@@ -1027,9 +1039,8 @@ z-index:0;
     }
 
     .page-2-b1-left{
-        z-index: 2;
-        padding-top: 30%;
-        padding-bottom: 13%;
+        padding-top: 10%;
+        padding-bottom: 0;
     }
     .standard-margin2{
         padding: 10% 2.5% 5% 11.5%;
