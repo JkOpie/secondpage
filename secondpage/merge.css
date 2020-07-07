@@ -169,6 +169,10 @@ ul.primary-menu>li.menu-item>a {
     font-family:GothamLightRegular
 }
 
+.text-gothamroundedbold{
+    font-family:GothamRoundedBold
+}
+
 .text-bold{
     font-weight: bold;
 }
@@ -185,7 +189,7 @@ ul.primary-menu>li.menu-item>a {
     color:#C9C6C6;
 }
 .text-lucidagrande{
-    font-family:lucida-grande;
+    font-family:lucida-grande !important;
 }
 
 .text-75px{
@@ -628,12 +632,11 @@ input[type="submit"]{
 
 .page-2-b1-left{
     padding-left: 7%;
-    padding-top: 13%;
+    padding-top: 7%;
     padding-right: 7%;
-    padding-bottom: 3%;
 }
 .page-2-b1-right-img {
-    max-height: 100vh;
+    max-height: 100%;
     width: 100%;
 }
 .ul_desp li{
