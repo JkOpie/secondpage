@@ -84,7 +84,7 @@ div#hero>div {
  }
 
 #site-footer{
- background-color: #D54345 ;
+ background-color: #ea1d1c ;
 }
 
 .counter_wrapper{
@@ -147,7 +147,7 @@ ul.primary-menu>li.menu-item>a {
 }
 
 .img_main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -162,7 +162,7 @@ ul.primary-menu>li.menu-item>a {
     font-size: 15px;
     color: #FFFFFF;
     text-align: right;
-    background: #D54345 0% 0% no-repeat padding-box;
+    background: #ea1d1c 0% 0% no-repeat padding-box;
 }
 
 .gotham_font_round {
@@ -192,12 +192,16 @@ ul.primary-menu>li.menu-item>a {
     font-weight: bold;
 }
 
+.text-weight-700{
+    font-weight: 700;
+}
+
 .text-underline{
     text-decoration:underline;
 }
 
 .text-red{
-    color: #D54345;
+    color: #ea1d1c;
 }
 
 .text-grey{
@@ -223,6 +227,15 @@ ul.primary-menu>li.menu-item>a {
 .text-45px{
     font-size: calc(38px + (45 - 38) * ((100vw - 300px) / (1920 - 300)));
 
+}
+  
+.text-40px{
+    font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1920 - 300)));
+
+}
+
+.text-35px{
+   font-size: calc(32px + (35 - 32) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .text-33px{
@@ -277,8 +290,11 @@ ul.primary-menu>li.menu-item>a {
      font-size: calc(12px + (13 - 12) * ((100vw - 300px) / (1920 - 300)));
   }
 
-
 .text-line-height-55px{
+    line-height:55px;
+}
+
+.text-line-height-13{
     line-height:55px;
 }
 
@@ -301,7 +317,7 @@ ul.primary-menu>li.menu-item>a {
 
 
 .text_chilies {
-    color: red;
+    color: #ea1d1c;
     text-decoration: underline;
     font-family: abril-fatface;
 }
@@ -309,7 +325,7 @@ ul.primary-menu>li.menu-item>a {
 .btn_know {
     width: calc(200px + (295 - 200) * ((100vw - 300px) / (1920 - 300)));
     height: calc(70px + (85 - 70) * ((100vw - 300px) / (1920 - 300)));
-    background: #D54345 0% 0% no-repeat padding-box;
+    background: #ea1d1c 0% 0% no-repeat padding-box;
     opacity: 1;
     text-align: center;
     font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1920 - 300)));
@@ -317,6 +333,10 @@ ul.primary-menu>li.menu-item>a {
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
+}
+
+.margin-bottom-05em{
+    margin-bottom:0.5em;
 }
 
 
@@ -429,14 +449,14 @@ ul.primary-menu>li.menu-item>a {
 
  .subtitle-red {
      font-size: calc(26px + (32 - 26) * ((100vw - 300px) / (1920 - 300)));
-     color: #D54345;
+     color: #ea1d1c;
      font-family: gotham-regular;
      margin: 0;
  }
  
 .subtitle-red-p2 {
     font-size: calc(35px + (50 - 35) * ((100vw - 300px) / (1920 - 300)));
-    color: #D54345;
+    color: #ea1d1c;
     font-family: LucidaGrande;
     margin: 0;
     font-weight: bold;
@@ -492,7 +512,7 @@ ul.primary-menu>li.menu-item>a {
  }
 
  .pad-par2 {
-     padding-top: 25%;
+     padding-top: 100px;
      padding-bottom: 100px;
      padding-left: 80px;
      padding-right: 10%;
@@ -533,7 +553,7 @@ padding: 0;
 }
 
 .reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper, .reduced-spacing.footer-top-hidden #site-footer{
- background-color: #D54345;
+ background-color: #ea1d1c;
 }
 
 .widget-title{
@@ -545,8 +565,16 @@ padding: 0;
     color:#1D1D1B;
 }
 
+.p-text-norem-top{
+    margin-top:0rem;
+}
+
 .p-text-norem{
     margin-bottom:0rem;
+}
+
+.p-text-1rem{
+    margin-bottom:1rem;
 }
 
 .p-text-3rem{
@@ -640,7 +668,7 @@ input[type="submit"]{
     font-family:GothamRoundedBold ;
     font-size: 35px;
     padding-bottom: 24px;
-    color: #D54345;
+    color: #ea1d1c;
     font-weight: bold;
 }
 
@@ -675,7 +703,7 @@ input[type="submit"]{
     font-family: LucidaGrande;
     font-size: 50px;
     font-weight: bolder;
-    color: #D54345;
+    color: #ea1d1c;
     padding-bottom: 1em;
 }
 
@@ -719,7 +747,7 @@ input[type="submit"]{
 }
 
 .bg-red{
-    background-color: #D54345 ;
+    background-color: #ea1d1c ;
     height: 100%;
     padding: 10% 3% 10% 6.5%;
 z-index:0;
@@ -801,7 +829,7 @@ h2{
 
 .subtitle-red-pad {
     font-size: 32px;
-    color: #D54345;
+    color: #ea1d1c;
     font-family: gotham-regular;
     margin: 0;
     margin-bottom: 10px;
@@ -823,7 +851,7 @@ h2{
 
 .abril-fatface-40{
     font-size: calc(35px + (40 - 35) * ((100vw - 300px) / (1920 - 300)));
-    color: #D54345;
+    color: #ea1d1c;
     font-family: abril-fatface;
 }
 .text-gray{
@@ -831,7 +859,7 @@ h2{
 }
 
 .text-d54345{
-    color: #d54345;
+    color: #ea1d1c;
 }
 
 .background-gray{
@@ -920,7 +948,7 @@ h2{
     
     font-weight: bolder;
     font-family: gotham-rounded-bold;
-    color: #D54345;
+    color: #ea1d1c;
     padding-bottom: 5%;
 }
 
@@ -942,7 +970,7 @@ h2{
     
     font-weight: bolder;
     font-family: gotham-rounded-bold;
-    color: #D54345;
+    color: #ea1d1c;
     padding-bottom: 5%;
  }
 
@@ -1068,7 +1096,7 @@ h2{
         padding-top: 10%;    
         padding-left: 13%;
         padding-right: 7%;
-				padding-bottom:10%;
+		padding-bottom:10%;
     }
 		
     input[type="submit"]{
