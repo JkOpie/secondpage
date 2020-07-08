@@ -3,6 +3,12 @@ div#hero {
     z-index: 100;
 }
 
+ul.primary-menu li.menu-item a{
+	   font-weight: bold;
+    font-size: 20px;
+}
+
+
 div#hero>div {
     position: absolute;
     width: 100%;
@@ -11,6 +17,10 @@ div#hero>div {
     transition: ease 2s;
     
 
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+	border-color: red;
 }
 
 .black{
@@ -93,8 +103,13 @@ div#hero>div {
 }
 
 .nav-toggle .toggle-inner{
- 
+padding:unset;
  color:#fff;
+}
+
+.nav-toggle .toggle-icon, .nav-toggle svg{
+	height:unset;
+	overflow:unset;
 }
 
 .no-padding {
@@ -395,7 +410,7 @@ ul.primary-menu>li.menu-item>a {
 .right_div {
     width: 100%;
     height: 100vh;
-    padding-top: 25%;
+    padding-top: 20%;
     padding-left: 13%;
     padding-right: 7%;
    
@@ -597,21 +612,27 @@ input[type="color"]
 {
     border: 1px solid #707070;
     border-radius: 5px;
-    height: 80px;
+    height: 50px;
+		margin-bottom: 30px!important;
 }
 textarea{
-    height:306px;
+    height:unset;
     margin-bottom:59px;
+		border-radius: 5px;
     }
 
 input[type="submit"]{
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        height: 85px;
-        width: 295px;
-        color: #1D1D1B;
-        font-size: 22px;
-        font-family:lucida-grande; 
-        font-weight:bold;
+         text-decoration: none;
+     display: inline-block;
+     border: none;
+     color: #1D1D1B;
+     padding: 16px 28px;
+     text-align: center;
+     letter-spacing: 2.5px;
+     font-weight: bold;
+     font-family: lucida-grande;
+		background:#FFFFFF ;
+		font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1920 - 300)))
     }
 
 
@@ -700,7 +721,7 @@ input[type="submit"]{
 .bg-red{
     background-color: #D54345 ;
     height: 100%;
-    padding: 10% 3% 17% 6.5%;
+    padding: 10% 3% 10% 6.5%;
 z-index:0;
     
 }
@@ -762,6 +783,10 @@ z-index:0;
     text-align: left;
 }
 
+h2{
+    margin: 0;
+}
+
 .subtitle-sub-nopad-lg {
    font-size: calc(16px + (17 - 16) * ((100vw - 300px) / (1920 - 300)));
    font-family: gotham-light;
@@ -775,7 +800,7 @@ z-index:0;
  }
 
 .subtitle-red-pad {
-    
+    font-size: 32px;
     color: #D54345;
     font-family: gotham-regular;
     margin: 0;
@@ -826,6 +851,10 @@ z-index:0;
     padding:9% 3% 5% 6.5%;
  }
 
+ p.subtitle-sub-nopad{
+    line-height: 1.8;
+ }
+
  .r1-margin{
      padding-right:33.3%;
  }
@@ -840,6 +869,10 @@ z-index:0;
      height:unset;
      transition: ease 2s;
  }
+
+ h2.subtitle-red-pad {
+    margin-top: 0;
+}
 
  
 
@@ -884,7 +917,7 @@ z-index:0;
 }
 
 .yellow_desc_wrapper2 h2{
-    font-size: 32px;
+    
     font-weight: bolder;
     font-family: gotham-rounded-bold;
     color: #D54345;
@@ -895,7 +928,8 @@ z-index:0;
    font-size: 17px;
    font-family: gotham-rounded-bold;
    font-weight: 100;
-   padding-left: 22px;
+   
+	margin:0;
 }
 
  .yellow_desc_wrapper img{
@@ -916,12 +950,14 @@ z-index:0;
     font-size: 17px;
     font-family: gotham-rounded-bold;
     font-weight: 100;
-    padding-left: 22px;
+    
+	 margin:0;
  }
  
 .div-gap{
 	margin-bottom:167px;
 }
+
 
 
 @media  screen and (max-width: 960px) {
@@ -981,11 +1017,21 @@ z-index:0;
   
 
   @media  screen and (max-width: 768px) {
+		
+		.form-padding{
+			padding-top:10% !important;
+		}
+		.button{
+        width: 100%;
+    }
 
     .yellow_heading_wrapper p{
         width: 100%;
     }
 
+    h2.subtitle-red-pad {
+        margin-top: 0;
+    }
     
 
     .left-to-right{
@@ -995,6 +1041,8 @@ z-index:0;
     .right-to-left{
         order:1;
     }
+		
+		
     .black-bg{
         background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://mychilli.asia/wp-content/uploads/2020/06/image_2.png);
         background-position: center;
@@ -1018,8 +1066,9 @@ z-index:0;
         width: 100%;
         height: unset;
         padding-top: 10%;    
-        padding-left: 7%;
+        padding-left: 13%;
         padding-right: 7%;
+				padding-bottom:10%;
     }
 		
     input[type="submit"]{
@@ -1047,9 +1096,11 @@ z-index:0;
           padding-left:9%;
     }
     .r1-custom{
-        padding-bottom:0;
+        padding-bottom:10%;
+			  padding-top:10%;
     }
     .r2-custom{
+			padding-top:10%;
         padding-bottom:0;
     }
 
@@ -1084,7 +1135,7 @@ z-index:0;
         padding-right:0;
     }
     .bg-red{
-        padding: 10% 12% 28% 12%;
+        padding: 100px 12% 28% 12%;
     }
     .block1_wrapper{
         width: 100%;
@@ -1140,7 +1191,7 @@ z-index:0;
 
 @media only screen and (max-width:400px){
     .bg-red{
-        padding: 22% 12% 28% 12%;
+        padding: 100px 12% 28% 12%;
    }
  }
 
