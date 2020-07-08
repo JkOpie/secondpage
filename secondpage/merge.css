@@ -422,7 +422,7 @@ ul.primary-menu>li.menu-item>a {
 
 
  .title-lucida {
-     font-size: calc(32px + (45 - 32) * ((100vw - 300px) / (1920 - 300)));
+     font-size: 30px;
      font-weight: bold;
      font-family: lucida-grande;
  }
@@ -562,7 +562,11 @@ padding: 0;
 
 .gotham-light{
     font-family:gotham-light;
-    line-height: 1.8;
+    
+}
+
+.tfe{
+    font-size:16px;
 }
 
 .display-toggle{
@@ -612,13 +616,12 @@ input[type="color"]
     border: 1px solid #707070;
     border-radius: 5px;
     height: 50px;
-		margin-bottom: 30px!important;
+	margin-bottom: 10px!important;
 }
 textarea{
-    height:unset;
-    margin-bottom:59px;
-		border-radius: 5px;
-    }
+    height:150px;
+	border-radius: 5px;
+}
 
 input[type="submit"]{
          text-decoration: none;
@@ -718,10 +721,10 @@ input[type="submit"]{
 }
 
 .bg-red{
-    background-color: #D54345 ;
+    background-color: #ea1d1c ;
     height: 100%;
     padding: 10% 3% 10% 6.5%;
-z-index:0;
+    z-index:0;
     
 }
 
@@ -774,12 +777,13 @@ z-index:0;
 }
 
  .subtitle-sub-nopad {
-    font-size: 17px;
+    font-size: 16px;
     font-family: gotham-light;
     line-height:35px;
     background: transparent;
     border: none;
     text-align: left;
+    cursor: pointer !important;
 }
 
 h2{
@@ -796,11 +800,13 @@ h2{
     font-size: calc(20px + (23 - 20) * ((100vw - 300px) / (1920 - 300)));
     font-weight: bold;
     font-family: gotham-medium-regular;
+    margin-bottom: 5px;
  }
 
 .subtitle-red-pad {
-    font-size: 32px;
-    color: #D54345;
+    font-size: 28px;
+    font-weight: 100;
+    color: #ea1d1c;
     font-family: gotham-regular;
     margin: 0;
     margin-bottom: 10px;
@@ -808,21 +814,21 @@ h2{
 }
 
 .subtitle-red-pad-sm {
-    font-size: calc(23px + (26 - 23) * ((100vw - 300px) / (1920 - 300)));
-    
+    font-size: 22px;
     font-family: gotham-regular;
     margin: 0;
     margin-bottom: 10px;
     line-height: 40px;
     background: transparent;
     border: none;
-    text-align: left
+    text-align: left;
+    cursor: pointer !important;
 }
 
 
 .abril-fatface-40{
-    font-size: calc(35px + (40 - 35) * ((100vw - 300px) / (1920 - 300)));
-    color: #D54345;
+    font-size: 30px;
+    color: #ea1d1c;
     font-family: abril-fatface;
 }
 .text-gray{
@@ -830,7 +836,7 @@ h2{
 }
 
 .text-d54345{
-    color: #d54345;
+    color: #ea1d1c;
 }
 
 .background-gray{
@@ -869,9 +875,6 @@ h2{
      transition: ease 2s;
  }
 
- h2.subtitle-red-pad {
-    margin-top: 0;
-}
 
  
 
@@ -885,8 +888,9 @@ h2{
 
  .yellow_heading_wrapper h1{
     font-family: lucida-grande;
-    font-weight: bold;
-    padding-bottom: 3%;
+    font-weight: normal;
+    padding-bottom: 5px;
+    font-size: 35px;
  }
 
  .yellow_heading_wrapper p{
@@ -916,19 +920,38 @@ h2{
 }
 
 .yellow_desc_wrapper2 h2{
-    
-    font-weight: bolder;
-    font-family: gotham-rounded-bold;
-    color: #D54345;
-    padding-bottom: 5%;
+  
+    font-family: gotham-regular;
+    font-size: 35px ;
+    font-weight: normal;
+    color: #ea1d1c;
+    padding-bottom: 5px;
 }
 
 .yellow_desc_wrapper2 ul {
    font-size: 17px;
    font-family: gotham-rounded-bold;
    font-weight: 100;
-   
+   padding-left: 23px;
 	margin:0;
+}
+
+.smoking-header{
+    font-size:50px;
+    font-weight: bold;
+    font-family: gotham-rounded-bold;
+}
+
+.smoking_p{
+    font-size: 16px;
+}
+
+.chilies_asia_p{
+    font-size: 26px;
+}
+
+.ground_floor_p{
+    font-size: 26px;
 }
 
  .yellow_desc_wrapper img{
@@ -938,17 +961,18 @@ h2{
  }
 
  .yellow_desc_wrapper h2{
-    
-    font-weight: bolder;
-    font-family: gotham-rounded-bold;
-    color: #D54345;
-    padding-bottom: 5%;
+    font-size: 35px ;
+    font-weight: normal;
+    font-family: gotham-regular;
+    color: #ea1d1c;
+    padding-bottom: 5px;
  }
 
  .yellow_desc_wrapper ul {
     font-size: 17px;
     font-family: gotham-rounded-bold;
     font-weight: 100;
+    padding-left: 23px;
     
 	 margin:0;
  }
