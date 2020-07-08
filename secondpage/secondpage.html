@@ -47,13 +47,13 @@
         <div class="row " >
             <div class="col-md-6 page-2-b1-left left-to-right " style="background: #1D1D1B;color:grey;">
                 <div class="p-text-3rem">
-                    <h2 class="text-lucidagrande text-red ">Vision</h2>
+                    <h2 class="text-lucidagrande text-red">Vision</h2>
                     <p class="text-18px gotham-light">To be an integrated and strategic world class engagement agency.
                     </p>
                 </div>
 
                 <div class="p-text-3rem">
-                    <h2 class="text-lucidagrande text-red ">Mission</h2>
+                    <h2 class="text-lucidagrande text-red">Mission</h2>
                     <p class="text-18px gotham-light">To be the global capable player with world class delivery system and to
                         provide lasting positive impact or results in all we do.</p>
                 </div>
@@ -246,10 +246,10 @@
 
         </div>
 
-        <div class="row" style="background: #D54345 0% 0% no-repeat padding-box;">
+            <div class="row" style="background: #D54345 0% 0% no-repeat padding-box;">
             <div class="col-md-6 text-left text-white">
                 <div style="padding-left:7%;">
-                    <h1 class="heading_block_4 pb-5 text-lucidagrande text-50px"> Lauch your next project.</h1>
+                    <h1 class="heading_block_4 pb-5 text-lucidagrande text-50px"> Launch your next project.</h1>
                     <button class="button black"> LET'S CHAT </button>
                 </div>
             </div>
@@ -269,12 +269,13 @@
         </div>
 
     </main>
-</body>
-
-
-
-
 <script>
+$("ul.primary-menu li.menu-item a").css("color","#ffffff");
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item  .link-icon-wrapper  a").css("text-decoration","unset");
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item  .link-icon-wrapper  a").css("border-bottom","3px solid #e22658");
+$(".primary-menu li.current-menu-item  a, .primary-menu li.current-menu-item  .link-icon-wrapper  a").css("padding-bottom","5px");
+
+
     var pic_1 = document.querySelector('#pic_1');
     var heroElem = document.querySelector('#hero');
     var div2 = document.querySelector('#div2');
@@ -286,8 +287,22 @@
     //console.log(div_lst.offsetTop);
     //console.log(window.innerWidth);
 
-   
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $(".header-footer-group").addClass("scrolling");
+		$(".custom-logo"). attr("src", "https://mychilli.asia/wp-content/uploads/2020/06/logo.png");
+		
+    } else {
+        $(".header-footer-group").removeClass("scrolling");
+    }
+});
+
+    
         window.addEventListener('scroll', (event) => {
+
+       
             if (window.innerWidth > 768) {
                 //console.log(window.innerWidth);
                  myFunction();
@@ -303,7 +318,7 @@
                 heroElem.style.top = "0px";
             } else if (window.pageYOffset > 4700) {
                 heroElem.classList.add("sticky");
-                heroElem.style.top = "125px";
+               heroElem.style.top = "125px";
                 pic_1.style.background = "url(https://mychilli.asia/wp-content/uploads/2020/07/8.png)";
             } else if (window.pageYOffset > 4000) {
                 pic_1.style.background = "url(https://mychilli.asia/wp-content/uploads/2020/07/8.png)";
@@ -315,12 +330,10 @@
                 pic_1.style.background = "url(https://mychilli.asia/wp-content/uploads/2020/07/4.png)";
             } else if (window.pageYOffset > 2000) {
                 pic_1.style.background = "url(https://mychilli.asia/wp-content/uploads/2020/07/3.png)";
-                heroElem.style.top = "125px";
             } else if (window.pageYOffset > div2.offsetTop) {
                 heroElem.classList.add("sticky");
-                heroElem.style.top = "125px";
                 pic_1.style.background = "url(https://mychilli.asia/wp-content/uploads/2020/07/2.png)";
-               
+                heroElem.style.top = "125px";
             } else {
                 heroElem.classList.remove("sticky");
                 heroElem.style.top = "0px";
