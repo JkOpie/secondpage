@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="merge.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <img id="img1" class="index-image-mod pos-mod" src="https://mychilli.asia/wp-content/uploads/2020/06/bg.png">
+        <div class="row black-bg text-grey gotham-rounded" style="height:100vh">
+            <div class="col-md-12"></div>
+            <div class="col-md-12 index-right-text-first">
+                <h1 id="h-1" class="text-hidden index-right-text-h">01</h1>
+                <p>About Us</p>
+            </div>
+            <div class="col-md-12 index-left-text">
+                <h1 id="h-2" class="text-hidden index-left-text-h">02</h1>
+                <p>Physical Events</p>
+            </div>
+            <div class="col-md-12 index-right-text">
+                <h1 id="h-3" class="text-hidden index-right-text-h">03</h1>
+                <p>Virtual Events</p>
+            </div>
+            <div class="col-md-12 index-left-text">
+                <h1 id="h-4" class="text-hidden index-left-text-h">04</h1>
+                <p>Digital Events</p>
+            </div>
+            <div class="col-md-12 index-right-text">
+                <h1 id="h-5" class="text-hidden index-right-text-h">05</h1>
+                <p>Contact Us</p>
+            </div>
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+
+    <script>
+        $('#h-2').animate({'padding-left':'0%'},1500).fadeIn({queue: false, duration: 3000});
+        $('#h-3').animate({'margin-left':'0%'},1750).fadeIn({queue: false, duration: 4000});
+        $('#h-4').animate({'padding-left':'0%'},2000).fadeIn({queue: false, duration: 5000});
+        $('#h-5').animate({'margin-left':'0%'},2250).fadeIn({queue: false, duration: 6000});
+        $('#h-1').animate({'margin-left':'0%'},2500).fadeIn({queue: false, duration: 7000});
+        $('#img1').fadeIn(1500);
+    </script>
+</body>
+
+</html>
